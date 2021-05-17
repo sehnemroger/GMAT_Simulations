@@ -32,20 +32,16 @@ def runScript(mScript,reportStr,orderStr,degreeStr,path2here,comp,nDegree):
             f.write(script)
 
         ## Load current script
-        t = gmat.LoadScript(scriptName)
-        #print(t) # true if script loads successfully
-
-        ## Uncoment this line to generate scripts that are being run
-        #gmat.SaveScript(nReportStr[:-4] + ".script")
+        gmat.LoadScript(scriptName)
 
         ## Runs gmat script
         t = gmat.RunScript()
-        #print(t) # true if script runs successfully
 
 def main():
     ## Mounting the runs
     maxDegree = 8
-    maxComps = 5
+    minComps = 1
+    maxComps = 2
 
     ## Path to here
     path2here = str(pathlib.Path(__file__).parent.absolute()) # get full path of this script in a string
@@ -56,7 +52,7 @@ def main():
     reportStr = "ReportFile1.txt"
 
     tic = time.time()
-    for comp in range(1, maxComps + 1): # Actual computer 
+    for comp in range(minComps, maxComps + 1): # Actual computer 
         ## Main script
         path2Script = "comp" + str(comp) + "/Order11.script" # This is a relative path
         with open(path2Script,"r") as f:
