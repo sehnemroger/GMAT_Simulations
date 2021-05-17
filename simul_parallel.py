@@ -37,6 +37,12 @@ def runScript(mScript,reportStr,orderStr,degreeStr,path2here,comp,nDegree):
         ## Runs gmat script
         t = gmat.RunScript()
 
+        ## To delete script files uncomment those lines
+        file_to_rem = pathlib.Path(scriptName)
+        file_to_rem.unlink()
+        
+    print("All simullations of degree: " + str(nDegree) + " are done.")
+
 def main():
     ## Mounting the runs
     maxDegree = 8
@@ -52,7 +58,10 @@ def main():
     reportStr = "ReportFile1.txt"
 
     tic = time.time()
+
     for comp in range(minComps, maxComps + 1): # Actual computer 
+        ## Print info
+        print("Running simulations for computer: " + str(comp))
         ## Main script
         path2Script = "comp" + str(comp) + "/Order11.script" # This is a relative path
         with open(path2Script,"r") as f:
@@ -64,7 +73,7 @@ def main():
         pool.close()
         pool.join()
 
-    print(time.time() - tic)
+    print("Time for simulations: " + str(time.time() - tic) + " seconds.")
 
 if __name__ == "__main__":
     main()
