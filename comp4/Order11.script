@@ -1,0 +1,302 @@
+%General Mission Analysis Tool(GMAT) Script
+%Created: 2020-12-02 16:32:15
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+
+Create Spacecraft ITASAT2_1;
+GMAT ITASAT2_1.DateFormat = UTCGregorian;
+GMAT ITASAT2_1.Epoch = '01 Aug 2021 00:00:00.000';
+GMAT ITASAT2_1.CoordinateSystem = EarthMJ2000Eq;
+GMAT ITASAT2_1.DisplayStateType = Keplerian;
+GMAT ITASAT2_1.SMA = 6871.000000000002;
+GMAT ITASAT2_1.ECC = 2.449640607037636e-16;
+GMAT ITASAT2_1.INC = 45.00000000000001;
+GMAT ITASAT2_1.RAAN = 150;
+GMAT ITASAT2_1.AOP = 0;
+GMAT ITASAT2_1.TA = 0;
+GMAT ITASAT2_1.DryMass = 10;
+GMAT ITASAT2_1.Cd = 2.2;
+GMAT ITASAT2_1.Cr = 1.4;
+GMAT ITASAT2_1.DragArea = 0.02;
+GMAT ITASAT2_1.SRPArea = 0.035;
+GMAT ITASAT2_1.SPADDragScaleFactor = 1;
+GMAT ITASAT2_1.SPADSRPScaleFactor = 1;
+GMAT ITASAT2_1.NAIFId = -10005001;
+GMAT ITASAT2_1.NAIFIdReferenceFrame = -9005001;
+GMAT ITASAT2_1.OrbitColor = Red;
+GMAT ITASAT2_1.TargetColor = Teal;
+GMAT ITASAT2_1.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT ITASAT2_1.CdSigma = 1e+70;
+GMAT ITASAT2_1.CrSigma = 1e+70;
+GMAT ITASAT2_1.Id = 'SatId';
+GMAT ITASAT2_1.Attitude = NadirPointing;
+GMAT ITASAT2_1.SPADSRPInterpolationMethod = Bilinear;
+GMAT ITASAT2_1.SPADSRPScaleFactorSigma = 1e+70;
+GMAT ITASAT2_1.SPADDragInterpolationMethod = Bilinear;
+GMAT ITASAT2_1.SPADDragScaleFactorSigma = 1e+70;
+GMAT ITASAT2_1.ModelFile = 'aura.3ds';
+GMAT ITASAT2_1.ModelOffsetX = 0;
+GMAT ITASAT2_1.ModelOffsetY = 0;
+GMAT ITASAT2_1.ModelOffsetZ = 0;
+GMAT ITASAT2_1.ModelRotationX = 0;
+GMAT ITASAT2_1.ModelRotationY = 0;
+GMAT ITASAT2_1.ModelRotationZ = 0;
+GMAT ITASAT2_1.ModelScale = 1;
+GMAT ITASAT2_1.AttitudeDisplayStateType = 'Quaternion';
+GMAT ITASAT2_1.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT ITASAT2_1.EulerAngleSequence = '321';
+GMAT ITASAT2_1.AttitudeReferenceBody = Earth;
+GMAT ITASAT2_1.AttitudeConstraintType = 'OrbitNormal';
+GMAT ITASAT2_1.BodyAlignmentVectorX = 1;
+GMAT ITASAT2_1.BodyAlignmentVectorY = 0;
+GMAT ITASAT2_1.BodyAlignmentVectorZ = 0;
+GMAT ITASAT2_1.BodyConstraintVectorX = 0;
+GMAT ITASAT2_1.BodyConstraintVectorY = 0;
+GMAT ITASAT2_1.BodyConstraintVectorZ = 1;
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft ITASAT2_2;
+GMAT ITASAT2_2.DateFormat = UTCGregorian;
+GMAT ITASAT2_2.Epoch = '01 Aug 2021 00:00:00.000';
+GMAT ITASAT2_2.CoordinateSystem = EarthMJ2000Eq;
+GMAT ITASAT2_2.DisplayStateType = Keplerian;
+GMAT ITASAT2_2.SMA = 6871.000000000002;
+GMAT ITASAT2_2.ECC = 2.449640607037636e-16;
+GMAT ITASAT2_2.INC = 45.00000000000001;
+GMAT ITASAT2_2.RAAN = 180;
+GMAT ITASAT2_2.AOP = 0;
+GMAT ITASAT2_2.TA = 0;
+GMAT ITASAT2_2.DryMass = 10;
+GMAT ITASAT2_2.Cd = 2.2;
+GMAT ITASAT2_2.Cr = 1.4;
+GMAT ITASAT2_2.DragArea = 0.02;
+GMAT ITASAT2_2.SRPArea = 0.035;
+GMAT ITASAT2_2.SPADDragScaleFactor = 1;
+GMAT ITASAT2_2.SPADSRPScaleFactor = 1;
+GMAT ITASAT2_2.NAIFId = -10005001;
+GMAT ITASAT2_2.NAIFIdReferenceFrame = -9005001;
+GMAT ITASAT2_2.OrbitColor = Red;
+GMAT ITASAT2_2.TargetColor = Teal;
+GMAT ITASAT2_2.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT ITASAT2_2.CdSigma = 1e+70;
+GMAT ITASAT2_2.CrSigma = 1e+70;
+GMAT ITASAT2_2.Id = 'SatId';
+GMAT ITASAT2_2.Attitude = NadirPointing;
+GMAT ITASAT2_2.SPADSRPInterpolationMethod = Bilinear;
+GMAT ITASAT2_2.SPADSRPScaleFactorSigma = 1e+70;
+GMAT ITASAT2_2.SPADDragInterpolationMethod = Bilinear;
+GMAT ITASAT2_2.SPADDragScaleFactorSigma = 1e+70;
+GMAT ITASAT2_2.ModelFile = 'aura.3ds';
+GMAT ITASAT2_2.ModelOffsetX = 0;
+GMAT ITASAT2_2.ModelOffsetY = 0;
+GMAT ITASAT2_2.ModelOffsetZ = 0;
+GMAT ITASAT2_2.ModelRotationX = 0;
+GMAT ITASAT2_2.ModelRotationY = 0;
+GMAT ITASAT2_2.ModelRotationZ = 0;
+GMAT ITASAT2_2.ModelScale = 1;
+GMAT ITASAT2_2.AttitudeDisplayStateType = 'Quaternion';
+GMAT ITASAT2_2.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT ITASAT2_2.EulerAngleSequence = '321';
+GMAT ITASAT2_2.AttitudeReferenceBody = Earth;
+GMAT ITASAT2_2.AttitudeConstraintType = 'OrbitNormal';
+GMAT ITASAT2_2.BodyAlignmentVectorX = 1;
+GMAT ITASAT2_2.BodyAlignmentVectorY = 0;
+GMAT ITASAT2_2.BodyAlignmentVectorZ = 0;
+GMAT ITASAT2_2.BodyConstraintVectorX = 0;
+GMAT ITASAT2_2.BodyConstraintVectorY = 0;
+GMAT ITASAT2_2.BodyConstraintVectorZ = 1;
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft ITASAT2_3;
+GMAT ITASAT2_3.DateFormat = UTCGregorian;
+GMAT ITASAT2_3.Epoch = '01 Aug 2021 00:00:00.000';
+GMAT ITASAT2_3.CoordinateSystem = EarthMJ2000Eq;
+GMAT ITASAT2_3.DisplayStateType = Keplerian;
+GMAT ITASAT2_3.SMA = 6871;
+GMAT ITASAT2_3.ECC = 0;
+GMAT ITASAT2_3.INC = 90;
+GMAT ITASAT2_3.RAAN = 0;
+GMAT ITASAT2_3.AOP = 0;
+GMAT ITASAT2_3.TA = 0;
+GMAT ITASAT2_3.DryMass = 10;
+GMAT ITASAT2_3.Cd = 2.2;
+GMAT ITASAT2_3.Cr = 1.4;
+GMAT ITASAT2_3.DragArea = 0.02;
+GMAT ITASAT2_3.SRPArea = 0.035;
+GMAT ITASAT2_3.SPADDragScaleFactor = 1;
+GMAT ITASAT2_3.SPADSRPScaleFactor = 1;
+GMAT ITASAT2_3.NAIFId = -10005001;
+GMAT ITASAT2_3.NAIFIdReferenceFrame = -9005001;
+GMAT ITASAT2_3.OrbitColor = Red;
+GMAT ITASAT2_3.TargetColor = Teal;
+GMAT ITASAT2_3.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT ITASAT2_3.CdSigma = 1e+70;
+GMAT ITASAT2_3.CrSigma = 1e+70;
+GMAT ITASAT2_3.Id = 'SatId';
+GMAT ITASAT2_3.Attitude = NadirPointing;
+GMAT ITASAT2_3.SPADSRPInterpolationMethod = Bilinear;
+GMAT ITASAT2_3.SPADSRPScaleFactorSigma = 1e+70;
+GMAT ITASAT2_3.SPADDragInterpolationMethod = Bilinear;
+GMAT ITASAT2_3.SPADDragScaleFactorSigma = 1e+70;
+GMAT ITASAT2_3.ModelFile = 'aura.3ds';
+GMAT ITASAT2_3.ModelOffsetX = 0;
+GMAT ITASAT2_3.ModelOffsetY = 0;
+GMAT ITASAT2_3.ModelOffsetZ = 0;
+GMAT ITASAT2_3.ModelRotationX = 0;
+GMAT ITASAT2_3.ModelRotationY = 0;
+GMAT ITASAT2_3.ModelRotationZ = 0;
+GMAT ITASAT2_3.ModelScale = 1;
+GMAT ITASAT2_3.AttitudeDisplayStateType = 'Quaternion';
+GMAT ITASAT2_3.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT ITASAT2_3.EulerAngleSequence = '321';
+GMAT ITASAT2_3.AttitudeReferenceBody = Earth;
+GMAT ITASAT2_3.AttitudeConstraintType = 'OrbitNormal';
+GMAT ITASAT2_3.BodyAlignmentVectorX = 1;
+GMAT ITASAT2_3.BodyAlignmentVectorY = 0;
+GMAT ITASAT2_3.BodyAlignmentVectorZ = 0;
+GMAT ITASAT2_3.BodyConstraintVectorX = 0;
+GMAT ITASAT2_3.BodyConstraintVectorY = 0;
+GMAT ITASAT2_3.BodyConstraintVectorZ = 1;
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft ITASAT2_4;
+GMAT ITASAT2_4.DateFormat = UTCGregorian;
+GMAT ITASAT2_4.Epoch = '01 Aug 2021 00:00:00.000';
+GMAT ITASAT2_4.CoordinateSystem = EarthMJ2000Eq;
+GMAT ITASAT2_4.DisplayStateType = Keplerian;
+GMAT ITASAT2_4.SMA = 6871;
+GMAT ITASAT2_4.ECC = 0;
+GMAT ITASAT2_4.INC = 90;
+GMAT ITASAT2_4.RAAN = 29.99999999999999;
+GMAT ITASAT2_4.AOP = 0;
+GMAT ITASAT2_4.TA = 0;
+GMAT ITASAT2_4.DryMass = 10;
+GMAT ITASAT2_4.Cd = 2.2;
+GMAT ITASAT2_4.Cr = 1.4;
+GMAT ITASAT2_4.DragArea = 0.02;
+GMAT ITASAT2_4.SRPArea = 0.035;
+GMAT ITASAT2_4.SPADDragScaleFactor = 1;
+GMAT ITASAT2_4.SPADSRPScaleFactor = 1;
+GMAT ITASAT2_4.NAIFId = -10005001;
+GMAT ITASAT2_4.NAIFIdReferenceFrame = -9005001;
+GMAT ITASAT2_4.OrbitColor = Red;
+GMAT ITASAT2_4.TargetColor = Teal;
+GMAT ITASAT2_4.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT ITASAT2_4.CdSigma = 1e+70;
+GMAT ITASAT2_4.CrSigma = 1e+70;
+GMAT ITASAT2_4.Id = 'SatId';
+GMAT ITASAT2_4.Attitude = NadirPointing;
+GMAT ITASAT2_4.SPADSRPInterpolationMethod = Bilinear;
+GMAT ITASAT2_4.SPADSRPScaleFactorSigma = 1e+70;
+GMAT ITASAT2_4.SPADDragInterpolationMethod = Bilinear;
+GMAT ITASAT2_4.SPADDragScaleFactorSigma = 1e+70;
+GMAT ITASAT2_4.ModelFile = 'aura.3ds';
+GMAT ITASAT2_4.ModelOffsetX = 0;
+GMAT ITASAT2_4.ModelOffsetY = 0;
+GMAT ITASAT2_4.ModelOffsetZ = 0;
+GMAT ITASAT2_4.ModelRotationX = 0;
+GMAT ITASAT2_4.ModelRotationY = 0;
+GMAT ITASAT2_4.ModelRotationZ = 0;
+GMAT ITASAT2_4.ModelScale = 1;
+GMAT ITASAT2_4.AttitudeDisplayStateType = 'Quaternion';
+GMAT ITASAT2_4.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT ITASAT2_4.EulerAngleSequence = '321';
+GMAT ITASAT2_4.AttitudeReferenceBody = Earth;
+GMAT ITASAT2_4.AttitudeConstraintType = 'OrbitNormal';
+GMAT ITASAT2_4.BodyAlignmentVectorX = 1;
+GMAT ITASAT2_4.BodyAlignmentVectorY = 0;
+GMAT ITASAT2_4.BodyAlignmentVectorZ = 0;
+GMAT ITASAT2_4.BodyConstraintVectorX = 0;
+GMAT ITASAT2_4.BodyConstraintVectorY = 0;
+GMAT ITASAT2_4.BodyConstraintVectorZ = 1;
+
+%----------------------------------------
+%---------- Formation
+%----------------------------------------
+
+Create Formation Formation1;
+GMAT Formation1.Add = {ITASAT2_1, ITASAT2_2, ITASAT2_3, ITASAT2_4};
+
+
+
+
+
+
+
+
+%----------------------------------------
+%---------- ForceModels
+%----------------------------------------
+
+Create ForceModel InternalODEModel;
+GMAT InternalODEModel.CentralBody = Earth;
+GMAT InternalODEModel.PrimaryBodies = {Earth};
+GMAT InternalODEModel.Drag = None;
+GMAT InternalODEModel.SRP = Off;
+GMAT InternalODEModel.RelativisticCorrection = Off;
+GMAT InternalODEModel.ErrorControl = RSSStep;
+GMAT InternalODEModel.GravityField.Earth.Degree = 1;
+GMAT InternalODEModel.GravityField.Earth.Order = 1;
+GMAT InternalODEModel.GravityField.Earth.StmLimit = 100;
+GMAT InternalODEModel.GravityField.Earth.PotentialFile = 'EGM96.cof';
+GMAT InternalODEModel.GravityField.Earth.TideModel = 'None';
+
+%----------------------------------------
+%---------- Propagators
+%----------------------------------------
+
+Create Propagator DefaultProp;
+GMAT DefaultProp.FM = InternalODEModel;
+GMAT DefaultProp.Type = PrinceDormand78;
+GMAT DefaultProp.InitialStepSize = 14;
+GMAT DefaultProp.Accuracy = 9.999999999999999e-12;
+GMAT DefaultProp.MinStep = 14;
+GMAT DefaultProp.MaxStep = 14;
+GMAT DefaultProp.MaxStepAttempts = 50;
+GMAT DefaultProp.StopIfAccuracyIsViolated = true;
+
+%----------------------------------------
+%---------- Subscribers
+%----------------------------------------
+
+Create ReportFile ReportFile1;
+GMAT ReportFile1.SolverIterations = Current;
+GMAT ReportFile1.UpperLeft = [ 0 0 ];
+GMAT ReportFile1.Size = [ 0.5976470588235294 0.7952380952380952 ];
+GMAT ReportFile1.RelativeZOrder = 151;
+GMAT ReportFile1.Maximized = false;
+GMAT ReportFile1.Filename = 'ReportFile1.txt';
+GMAT ReportFile1.Precision = 16;
+GMAT ReportFile1.Add = {ITASAT2_1.InternalODEModel.Acceleration, ITASAT2_1.InternalODEModel.AccelerationX, ITASAT2_1.InternalODEModel.AccelerationY, ITASAT2_1.InternalODEModel.AccelerationZ, ITASAT2_1.EarthMJ2000Eq.INC, ITASAT2_1.Earth.ECC, ITASAT2_1.Earth.SMA, ITASAT2_1.EarthMJ2000Eq.RAAN, ITASAT2_2.InternalODEModel.Acceleration, ITASAT2_2.InternalODEModel.AccelerationX, ITASAT2_2.InternalODEModel.AccelerationY, ITASAT2_2.InternalODEModel.AccelerationZ, ITASAT2_2.EarthMJ2000Eq.INC, ITASAT2_2.Earth.ECC, ITASAT2_2.Earth.SMA, ITASAT2_2.EarthMJ2000Eq.RAAN, ITASAT2_3.InternalODEModel.Acceleration, ITASAT2_3.InternalODEModel.AccelerationX, ITASAT2_3.InternalODEModel.AccelerationY, ITASAT2_3.InternalODEModel.AccelerationZ, ITASAT2_3.EarthMJ2000Eq.INC, ITASAT2_3.Earth.ECC, ITASAT2_3.Earth.SMA, ITASAT2_3.EarthMJ2000Eq.RAAN, ITASAT2_4.InternalODEModel.Acceleration, ITASAT2_4.InternalODEModel.AccelerationX, ITASAT2_4.InternalODEModel.AccelerationY, ITASAT2_4.InternalODEModel.AccelerationZ, ITASAT2_4.EarthMJ2000Eq.INC, ITASAT2_4.Earth.ECC, ITASAT2_4.Earth.SMA, ITASAT2_4.EarthMJ2000Eq.RAAN, ITASAT2_1.UTCModJulian};
+GMAT ReportFile1.WriteHeaders = false;
+GMAT ReportFile1.LeftJustify = On;
+GMAT ReportFile1.ZeroFill = Off;
+GMAT ReportFile1.FixedWidth = true;
+GMAT ReportFile1.Delimiter = ' ';
+GMAT ReportFile1.ColumnWidth = 23;
+GMAT ReportFile1.WriteReport = true;
+
+
+%----------------------------------------
+%---------- Mission Sequence
+%----------------------------------------
+
+
+
+BeginMissionSequence;
+
+While ITASAT2_1.ElapsedSecs <= ITASAT2_1.Earth.OrbitPeriod
+   Propagate DefaultProp(Formation1);
+EndWhile;
