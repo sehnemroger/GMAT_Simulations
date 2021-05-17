@@ -10,8 +10,7 @@ import pathlib
 import time
 
 ## Mounting the runs
-maxDegree = 3
-maxOrder = 3
+maxDegree = 8
 maxComps = 5
 
 ## Path to here
